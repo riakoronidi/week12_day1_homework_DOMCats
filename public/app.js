@@ -72,6 +72,10 @@ var addCat = function(name, food, image) {
 }
 
 window.onload = function(){
+  addCat('Boba', 'Sock fluff', 'cat1.jpg');
+  addCat('Barnaby', 'Tuna', 'cat2.jpg');
+  addCat('Max', 'Whiskas Temptations', 'cat3.jpg');
+
   addCat('Ririka', 'Fish bones', 'cat4.jpg');
   addCat('Ella, Mella and Vella', 'Salmon pate', 'LouiseLikesCats.jpg');
 };
