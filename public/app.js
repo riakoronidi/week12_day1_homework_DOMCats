@@ -38,16 +38,19 @@ var createUlCat = function () {
   ulCat.classList.add("cat");
   return ulCat;
 }
+
 var createLiCat1 = function (name) {
   let liCat1 = document.createElement("li");
   liCat1.innerText = 'Name: ' + name;
   return liCat1;
 }
+
 var createLiCat2 = function (food) {
   let liCat2 = document.createElement("li");
   liCat2.innerText = 'Favourite food: ' + food;
   return liCat2;
 }
+
 var createLiCat3 = function (image) {
   let liCat3 = document.createElement("li");
   liCat3.innerHTML = '<img width="500" src=\'./images/' + image + '\'>';
@@ -60,7 +63,6 @@ appendElements = function(ulCat, liCat1, liCat2, liCat3){
   ulCat.appendChild(liCat3);
   cats.appendChild(ulCat);
 }
-
 
 var addCat = function(name, food, image) {
   var ulCat = createUlCat();
@@ -75,7 +77,6 @@ window.onload = function(){
   addCat('Boba', 'Sock fluff', 'cat1.jpg');
   addCat('Barnaby', 'Tuna', 'cat2.jpg');
   addCat('Max', 'Whiskas Temptations', 'cat3.jpg');
-
   addCat('Ririka', 'Fish bones', 'cat4.jpg');
   addCat('Ella, Mella and Vella', 'Salmon pate', 'LouiseLikesCats.jpg');
 };
